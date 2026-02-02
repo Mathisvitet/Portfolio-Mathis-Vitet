@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Mathis Vitet</title>
+  <meta name="description" content="Portfolio de Mathis Vitet (BUT Science des Données) : projets, compétences, objectifs et contact." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="#top">MV</a>
+
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">?</button>
+
+    <nav id="nav" class="nav">
+      <a href="#presentation">Présentation</a>
+      <a href="#why">Pourquoi BUT SD</a>
+      <a href="#projects">Projets</a>
+      <a href="#goals">Objectifs</a>
+      <a href="#proud">Le plus fier</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Portfolio 2024/2025</p>
+          <h1>Mathis Vitet</h1>
+          <p class="lead">
+            Étudiant en <strong>BUT Science des Données</strong> à l’Université Sorbonne Paris Nord.
+            Intéressé par les projets à impact : santé publique, environnement, mobilité.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn ghost" href="#contact">Me contacter</a>
+            <a class="btn ghost" href="Rose et Marron Simple Écrit à la main Portfolio Diaporama.pdf" download>
+              Télécharger le book (PDF)
+            </a>
+          </div>
+
+          <div class="meta">
+            <span>?? Île-de-France</span>
+            <span>?? BUT SD — USPN</span>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h2>Compétences clés</h2>
+          <ul class="list">
+            <li>R / Python : analyse, scripts</li>
+            <li>SQL : requêtes, jointures, logique relationnelle</li>
+            <li>Dataviz : Tableau / Metabase / Excel dashboards</li>
+            <li>Storytelling & restitution</li>
+          </ul>
+          <p class="note">
+            (Ces points viennent de tes pages “Présentation” et “Mes compétences”.)
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PRESENTATION -->
+    <section id="presentation" class="section">
+      <div class="container">
+        <h2>Présentation</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Qui suis-je ?</h3>
+            <p class="muted">
+              Je suis étudiant en première année de BUT Science des Données.
+              J’aime extraire des informations pertinentes à partir de données, construire des requêtes SQL,
+              créer des visualisations claires, et explorer des outils comme R et Python.
+            </p>
+
+            <h3 class="mt">Qualités</h3>
+            <ul class="list">
+              <li><strong>Curieux</strong> : j’aime aller au-delà du cours (ex : notions ML en Python).</li>
+              <li><strong>Autonome</strong> : capable de gérer une analyse complète (ex : PM2.5).</li>
+              <li><strong>Rigoureux</strong> : attention aux détails et vérification des résultats.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Mon profil en 3 lignes</h3>
+            <ul class="list">
+              <li>Analyse de données + statistiques</li>
+              <li>SQL & bases de données</li>
+              <li>Dataviz & restitution</li>
+            </ul>
+
+            <h3 class="mt">Domaines qui m’attirent</h3>
+            <div class="tags">
+              <span class="tag">Santé publique</span>
+              <span class="tag">Environnement</span>
+              <span class="tag">Économie / ESS</span>
+              <span class="tag">Mobilité urbaine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section id="why" class="section alt">
+      <div class="container">
+        <h2>Pourquoi la Science des Données ?</h2>
+
+        <div class="card">
+          <p class="muted">
+            La data science m’attire car elle est à l’intersection des maths, de l’informatique et de la réflexion stratégique.
+            Elle permet de transformer des chiffres en connaissances utiles à la décision (santé, environnement, transports…).
+          </p>
+
+          <h3 class="mt">Ce que j’aime particulièrement</h3>
+          <ul class="list">
+            <li>Analyse de données avec R et Python</li>
+            <li>Exploration de bases avec SQL</li>
+            <li>Visualisation claire des résultats (ex : Tableau)</li>
+          </ul>
+
+          <h3 class="mt">Veille</h3>
+          <ul class="list">
+            <li>Towards Data Science (Medium)</li>
+            <li>StatQuest (YouTube)</li>
+            <li>DataCamp / Kaggle</li>
+            <li>Sciences et Avenir / Futura Sciences</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="head-row">
+          <h2>Les projets</h2>
+          <div class="filters" role="group" aria-label="Filtrer les projets">
+            <button class="chip is-active" data-filter="all">Tous</button>
+            <button class="chip" data-filter="sql">SQL</button>
+            <button class="chip" data-filter="viz">Dataviz</button>
+            <button class="chip" data-filter="excel">Excel</button>
+            <button class="chip" data-filter="eco">Éco</button>
+          </div>
+        </div>
+
+        <div class="cards">
+          <!-- Projet 1 -->
+          <article class="card project" data-tags="sql viz">
+            <div class="top">
+              <h3>Projet 1 — Catastrophes climatiques</h3>
+              <span class="pill">PostgreSQL • Metabase</span>
+            </div>
+            <p class="muted">
+              Import de données, requêtes SQL (jointures multiples), visualisations Metabase
+              pour interpréter des tendances climatiques mondiales et régionales.
+            </p>
+            <ul class="mini">
+              <li>+ : requêtes progressives, dataviz Metabase</li>
+              <li>À améliorer : modélisation / jointures multi-niveaux, lisibilité/optimisation</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Repo</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Dashboard</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Rapport</a>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="card project" data-tags="viz">
+            <div class="top">
+              <h3>Projet 2 — Territoire (présentation en anglais)</h3>
+              <span class="pill">Synthèse • Poster</span>
+            </div>
+            <p class="muted">
+              Recherche de données ouvertes (éco/démo/culture), synthèse et restitution en anglais
+              avec poster numérique.
+            </p>
+            <ul class="mini">
+              <li>+ : oral en anglais, sélection d’infos, travail d’équipe</li>
+              <li>À améliorer : vocabulaire technique, gestion du stress</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Poster</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Slides</a>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="card project" data-tags="eco">
+            <div class="top">
+              <h3>Projet 3 — Coopérative Bio d’Île-de-France</h3>
+              <span class="pill">Analyse économique</span>
+            </div>
+            <p class="muted">
+              Étude du modèle coopératif (contexte, performances, limites, propositions)
+              à partir de sources et données réelles.
+            </p>
+            <ul class="mini">
+              <li>+ : recherche documentaire, synthèse, analyse critique</li>
+              <li>À améliorer : structuration longue, rigueur sur indicateurs</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Rapport</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Vidéo</a>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article class="card project" data-tags="excel viz">
+            <div class="top">
+              <h3>Projet 4 — Dashboard Excel (Power Query)</h3>
+              <span class="pill">Excel • TCD • Power Query</span>
+            </div>
+            <p class="muted">
+              Tableau de bord interactif (profil étudiants), nettoyage/enrichissement via Power Query,
+              TCD + segments + filtres dynamiques.
+            </p>
+            <ul class="mini">
+              <li>+ : structuration propre, TCD clairs, esthétique soignée</li>
+              <li>À améliorer : relations entre tables, Power Pivot, DAX</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Capture</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Fichier</a>
+            </div>
+          </article>
+
+          <!-- Projet 5 -->
+          <article class="card project" data-tags="viz">
+            <div class="top">
+              <h3>Projet 5 — Challenge national DataViz</h3>
+              <span class="pill">Infographie • INSEE</span>
+            </div>
+            <p class="muted">
+              Challenge (temps court) : analyse d’un dataset INSEE (scolarisation 15–29 ans),
+              production d’une infographie + pitch oral.
+            </p>
+            <ul class="mini">
+              <li>+ : clarté visuelle, hiérarchie, présentation sous pression</li>
+              <li>À améliorer : exploration rapide, choix de graphiques, interactivité</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noreferrer">Infographie</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer">Présentation</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals" class="section alt">
+      <div class="container">
+        <h2>Mes objectifs</h2>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Court terme</h3>
+            <ul class="list">
+              <li>Trouver un stage BUT2 / alternance (collectivité, bio, santé, transport…)</li>
+              <li>Renforcer Python, SQL, dataviz (Tableau/Power BI)</li>
+              <li>Consolider un portfolio solide (projets + visuels + code)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Moyen terme</h3>
+            <ul class="list">
+              <li>Master (Data Science / Statistique publique / environnement / santé)</li>
+              <li>Ou école d’ingénieur (admission parallèle)</li>
+              <li>Développer un profil technique + spécialisation progressive</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Long terme</h3>
+            <ul class="list">
+              <li>Travailler sur des enjeux utiles (santé, transition écologique, mobilité)</li>
+              <li>Rôle mêlant analyse + dataviz + communication + aide à la décision</li>
+              <li>Impact réel grâce aux données</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROUD -->
+    <section id="proud" class="section">
+      <div class="container">
+        <h2>Ce dont je suis le plus fier</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Challenge DataViz</h3>
+            <p class="muted">
+              Challenge intense : compréhension rapide, message visuel clair, défense à l’oral.
+              J’ai réussi à collaborer efficacement sous pression et à présenter avec confiance.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Mon autonomie sur les projets techniques</h3>
+            <p class="muted">
+              Requêtes SQL (jointures), automatisation en R, dashboard Excel Power Query :
+              ces projets m’ont prouvé que je peux m’autoformer, persévérer et livrer du concret.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Coordonnées</h3>
+            <p class="muted">Email : <a class="link" href="mailto:mathis.vitet95@gmail.com">mathis.vitet95@gmail.com</a></p>
+            <p class="muted">Téléphone : <a class="link" href="tel:+33769182641">07 69 18 26 41</a></p>
+
+            <div class="mt tags">
+              <a class="tag link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="tag link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          <form class="card" id="contactForm">
+            <h3>Message rapide</h3>
+            <label>Nom
+              <input name="name" required />
+            </label>
+            <label>Email
+              <input name="email" type="email" required />
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn" type="submit">Envoyer</button>
+            <p id="hint" class="muted mt"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container foot">
+        <p>© <span id="year"></span> Mathis Vitet</p>
+        <a class="link" href="#top">Retour en haut ?</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
